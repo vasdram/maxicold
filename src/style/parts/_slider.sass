@@ -1,0 +1,45 @@
+.slider
+  position: fixed
+  overflow: hidden
+  width: 90%
+  margin: auto
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  &__inner
+    //width: 9999px
+  &__arrow
+    position: absolute
+    width: 46px
+    height: 52px
+    top: 50%
+    margin-top: -15px
+    background-image: url("../images/sliderArrow.png")
+    background-repeat: no-repeat
+    cursor: pointer
+    &_left
+      left: 2%
+    &_right
+      right: 2%
+      transform: rotate(180deg);
+  .slide
+    -webkit-backface-visibility: hidden
+    position: absolute
+    display: none
+    width: 100%
+    left: 0
+    top: 50%;
+    margin-top: -23%;
+    &:first-child
+      position: absolute
+      display: block
+      float: left
+    img
+      max-width: 100%
+      display: block
+      height: auto
+      float: left
+      width: 100%
+      border: 0
+
